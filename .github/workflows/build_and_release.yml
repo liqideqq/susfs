@@ -32,8 +32,7 @@ jobs:
     - name: 安装 repo 工具
       run: |
         mkdir -p ~/.bin
-        export REPO_URL='https://mirrors.tuna.tsinghua.edu.cn/git/git-repo'
-        curl -o ~/.bin/repo $REPO_URL
+        curl -o ~/.bin/repo https://mirrors.tuna.tsinghua.edu.cn/git/git-repo
         chmod a+rx ~/.bin/repo
         echo 'export PATH=$PATH:~/.bin' >> $GITHUB_ENV
 
