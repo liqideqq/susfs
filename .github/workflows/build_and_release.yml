@@ -9,7 +9,7 @@ on:
 jobs:
   build-and-release:
     name: 构建和发布内核
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04  # 指定使用 Ubuntu 22.04 系统
 
     steps:
     - name: 检出仓库
