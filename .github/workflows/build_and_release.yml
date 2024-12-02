@@ -32,7 +32,7 @@ jobs:
     - name: Install repo tool
       run: |
         mkdir -p ~/.bin
-        curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+        curl https://mirrors.tuna.tsinghua.edu.cn/git/git-repo > ~/.bin/repo
         chmod a+rx ~/.bin/repo
         echo 'export PATH=$PATH:~/.bin' >> $GITHUB_ENV
 
